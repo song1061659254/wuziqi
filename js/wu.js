@@ -361,17 +361,17 @@ $(function(){
 		
 
 		$("#qipu").show();
-                    if($("#qipu").find("img").length){
-                        $("#qipu").find("img").attr("src",canvas.toDataURL());
-                    }else{
-                        $("<img>").attr("src",canvas.toDataURL()).appendTo("#qipu");
-                    }
-                    
-                    if($("#qipu").find("a").length){
-                        $("#qipu").find("a").attr("href",canvas.toDataURL());
-                    }else{
-                        $("<a>").attr("href",canvas.toDataURL()).attr("download","qipu.png").appendTo("#qipu");
-                    }
+        if($("#qipu").find("img").length){
+            $("#qipu").find("img").attr("src",canvas.toDataURL());
+        }else{
+            $("<img>").attr("src",canvas.toDataURL()).appendTo("#qipu");
+        }
+        
+        if($("#qipu").find("a").length){
+            $("#qipu").find("a").attr("href",canvas.toDataURL());
+        }else{
+            $("<a>").attr("href",canvas.toDataURL()).attr("download","qipu.png").appendTo("#qipu");
+        }
 		
 	}
 	

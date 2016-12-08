@@ -161,13 +161,20 @@
 	bottom: 0;*/
 	z-index: 77;
 }
+
+
 #info.bian{
 	top:0;
 	right: 0;
 	left: 0;
 	bottom: 0;
 }
+@keyframes run{
+	from{transform: translateY(-1000)}
+	to{transform: translateY(0)}
+}
 #info.active{
+	animation: run 3s 1;
 	display: block;
 }
 #info span,#info button{

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>五子棋</title>
+		<link rel="icon" sizes="192*192" href="img/icon.png">
+	</head>
+	<link rel="stylesheet" href="css/wu.css" />
+	<script src="js/jquery.js"></script>
+	<!--<script src="js/five.js"></script>-->
+	<script src="js/wu.js"></script>
+	<body>
+		<div id="jiemian">
+			<div class="welcome">
+				<div>
+					<span class="one">五子棋</span>
+					<span class="two">(点击进入游戏界面)</span>
+				</div>
+			</div>
+			<div id="zhe"></div>
+			<canvas id="canvas" width="600" height="600"></canvas>
+			<canvas id="can1" width="200" height="250"></canvas>
+			<canvas id="can2" width="200" height="250"></canvas>
+			<audio src="mp3/096.wav" id="audio"></audio>
+			<audio src="mp3/097.wav" id="audio1"></audio>
+			<audio src="mp3/098.wav" id="audio2"></audio>
+			
+			<div id="box">
+				<button class="btn1">开始游戏</button>
+				<button class="btn2">重新开始</button>
+				<button class="btn3">游戏模式</button>
+				<ul class="moshi">
+					<li class="rj" id="ai">
+						<a href="javascript:;">人机</a>
+					</li>
+					<li class="rr red" id="normal">
+						<a href="javascript:;">人人</a>
+					</li>
+				</ul>
+				<button class="btn4">游戏规则</button>
+				<button class="btn5">退出游戏</button>
+			</div>
+			
+			<div id="wuziqi">
+				<img src="img/wuziqi.png" alt="" />
+			</div>
+			
+			<div id="info">
+				<span class="text"></span>
+				<button class="again">再来一局</button>
+				<button class="cancle">退出</button>
+			</div>
+			
+			<div id="qipu">
+				<div class="close">×</div>
+			</div>
+		</div>
+	</body>
+</html>
